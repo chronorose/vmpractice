@@ -2,7 +2,6 @@
 #define chunk_h
 
 #include "common.h"
-#include <cstdint>
 
 typedef enum {
     OP_RETURN,
@@ -15,5 +14,7 @@ typedef struct {
 } Chunk;
 
 void initChunk(Chunk * chunk);
+void writeChunk(Chunk * chunk, uint8_t byte);
+
 
 #endif
